@@ -264,7 +264,6 @@
                 centerMode: centerMode,
                 centerPadding: centerPadding,
                 dots: dots,
-                infinite: infinite,
                 autoplay: autoplay,
                 fade: fade,
                 cssEase: cssEase,

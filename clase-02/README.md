@@ -50,8 +50,8 @@ esto lo vamos a solucionar en el siguiente paso.
 ### Breakpoints
 
 Es la herramienta más usada a la hora de hacer debugging, es un punto de 
-interrupción que detiene la ejecución del programa, en ese momento vamos a ver
-el estado general del programa.
+interrupción que detiene la ejecución del programa, y en ese momento nos va a 
+permitir ver el estado general del programa.
 
 Para usarlos, vamos a ir a nuestro archivo `script.js` y hacer clic en donde 
 está el número de la línea 6, haciendo esto va a aparecer el punto rojo que 
@@ -228,6 +228,14 @@ podemos loguear correctamente.
 
 ### Historia de Debugging
 
+El origen del término se popularizó cerca de 1945, en la Universidad de Harvard,
+uno de los equipos tuvo problemas con una de las primeras máquinas que 
+existieron (Harvard Mark II). Se encontraron con una polilla en un relé, la 
+sacaron y la pegaron en la documentación para dejar nota de la corrección del 
+error (la palabra **bug** para referirse a un error igual data de antes, se le 
+atribuye a Thomas Edison).
+Así fue evolucionando, pasando por breakpoints físicos en las máquinas de 
+tarjetas, hasta las herramientas que usamos hoy en día.
 
 ## Material Complementario
 
@@ -235,3 +243,7 @@ podemos loguear correctamente.
 
 - JetBrains Team. (2022, Septiembre 28). Debug JavaScript in Chrome. _Jetbrains_
 https://www.jetbrains.com/help/webstorm/debugging-javascript-in-chrome.html#ws_js-debug_reload_current_page
+- Multiple Authors. (2023, Febrero 22). Debugging. _Wikipedia_
+https://en.wikipedia.org/wiki/Debugging
+- Matthew Wills. (2022, Mayo 3). The Bug in the Computer Bug Story. _JSTOR Daily_
+https://daily.jstor.org/the-bug-in-the-computer-bug-story/
