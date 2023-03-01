@@ -107,13 +107,42 @@ ejecución o no, agregar una condición, etc.)
 
 ### Step Over, Step Into y Step Out
 
+Los **steps** nos permiten tener un manejo más granular sobre el código
+a la hora de hacer debugging. Hay tres tipos:
+- _Step Over_: avanza a la siguiente línea, si no tiene línea, termina la 
+interrupción del código.<br /><br />
+![img_11.png](assets%2Fimg_11.png)
+_Vemos cómo al hacer click en Step Over, la ejecución sigue con la siguiente 
+línea, sin entrar en ninguna función_<br /><br />
+- _Step Into_: entra a la función que se está ejecutando en la línea donde 
+estamos parados. <br /><br />
+![img_12.png](assets%2Fimg_12.png)
+_Con el Step Into, vemos como la ejecución sigue dentro de la función que está
+siendo invocada en este momento_ <br /><br />
+- _Step Out_: sale de la función en la que estamos y salta al paso próximo a la 
+finalización de la ejecución de la función.<br /><br />
+![img_13.png](assets%2Fimg_13.png)<br />
+_Para probar el Step Out, colocamos el breakpoint en la línea 21, hacemos un 
+Step Into, en la función **getSurname()**, y cuando hacemos un Step Out, vemos 
+como el cursor vuelve a la línea 21, porque todavía no terminó toda la 
+ejecución, falta la ejecución de la función **getFirstName()**._<br /><br />
+![img_14.png](assets%2Fimg_14.png)
+_Notar como el cursor ya se posiciona a la izquierda de **getFirstName()**, el 
+cursor nos indica en que punto continúa la ejecución de nuestro programa_<br /><br />
 
+![img_15.png](assets%2Fimg_15.png)
+
+Ayudándonos con los steps logramos encontrar que el error en nuestro programa
+estaba en las funciones **getFirstName()** y **getSurname()**. Completamos las
+funciones con nuestro nombre y apellido, y probamos de nuevo:
+
+![img_16.png](assets%2Fimg_16.png)
+
+---
 ### Introducción y primer fix
 
 
 ### Historia de Debugging
-
-
 
 
 ## Material Complementario

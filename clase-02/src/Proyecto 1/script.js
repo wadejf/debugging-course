@@ -23,9 +23,9 @@ function getCompleteName() {
 }
 
 function getSurname() {
-  return '';
+  return 'Wade';
 }
 
 function getFirstname() {
-  return '';
+  return 'Facundo';
 }
