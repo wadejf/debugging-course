@@ -23,7 +23,7 @@ function addFavorite(title) {
   try {
     if (isLogged()) {
       var favoritesJSON = localStorage.getItem('favorites');
-      var favorites = JSON.parse(favoritesJSON);
+      var favorites = JSON.parse(favoritesJSON) ?? [];
       favorites.push(title);
       localStorage.setItem('favorites', JSON.stringify(favorites));
 
