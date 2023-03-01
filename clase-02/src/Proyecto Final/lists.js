@@ -23,12 +23,10 @@ function toggleFavoritesList() {
   fillList();
 }
 
-
-
 function fillAllList() {
   var list = document.getElementById('items');
   list.innerHTML = '';
-  for (i = 1; i < items.length; i++) {
+  for (i = 0; i < items.length; i++) {
     var item = items[i];
     var favorite = isFavorite(item.title);
     addItem(item, favorite);

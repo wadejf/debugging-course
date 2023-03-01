@@ -197,7 +197,34 @@ crehana, **password**: crehana123) no nos deja ingresar.`
 
 #### Solución
 
+Para el primer error busco la función que alimenta la lista de items, en el
+archivo `lists.js` el método **fillAllList()**,
 
+![img_22.png](assets%2Fimg_22.png)
+
+Vemos que al iterar sobre la lista, empieza sobre el índice 1, y los arrays
+(por lo menos en JS), empiezan desde el índice 0. Por esto se está salteando el
+primer item. Cambiamos por `i = 0` y probamos de nuevo:
+
+![img_23.png](assets%2Fimg_23.png)
+
+Para el segundo error buscamos donde se hace el inicio de sesión. Es en el 
+archivo `session.js`, ubicamos la función **login** y procedemos con el
+debugging:
+
+![img_24.png](assets%2Fimg_24.png)
+
+Vemos que **user** no tienen el valor que se ingresó en el input, sino que es el
+elemento input completo (con todos los atributos).
+Cambiamos la línea que obtiene el valor: `document.getElementById('user');`
+por `document.getElementById('user').value;`. 
+En el caso de password, en la línea 18, se usa `password.value`, por lo que el
+error no se repite:
+
+![img_25.png](assets%2Fimg_25.png)
+
+Haciendo un Step Over, vemos que el código ya no sale por el **else**, y nos
+podemos loguear correctamente.
 
 ### Historia de Debugging
 

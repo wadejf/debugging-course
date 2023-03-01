@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 }, false);
 
 function login() {
-  var user = document.getElementById('user');
+  var user = document.getElementById('user').value;
   var password = document.getElementById('password');
   var loginError = document.getElementById('login-error');
   loginError.innerHTML = '';
