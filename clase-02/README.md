@@ -128,7 +128,8 @@ como el cursor vuelve a la línea 21, porque todavía no terminó toda la
 ejecución, falta la ejecución de la función **getFirstName()**._<br /><br />
 ![img_14.png](assets%2Fimg_14.png)
 _Notar como el cursor ya se posiciona a la izquierda de **getFirstName()**, el 
-cursor nos indica en que punto continúa la ejecución de nuestro programa_<br /><br />
+cursor nos indica en que punto continúa la ejecución de nuestro programa_<br />
+<br />
 
 ![img_15.png](assets%2Fimg_15.png)
 
@@ -140,6 +141,62 @@ funciones con nuestro nombre y apellido, y probamos de nuevo:
 
 ---
 ### Introducción y primer fix
+
+Para poner en práctica lo anterior, vamos a usar el proyecto final del curso.
+
+![img_17.png](assets%2Fimg_17.png)
+
+La aplicación es una página con un listado de items, que cuenta con la 
+posibilidad de agregar esos items a favoritos, un inicio de sesión local y un 
+listado de frases relacionadas a los items. Se compone por:
+
+- `dependencies`, librerias de CSS y JS para la estética de la app.
+- `favorites.js`, funciones de agregar y quitar favoritos
+- `items.js`, guarda la información de los items
+- `lists.js`, contiene las funciones para generar los listados de los items.
+- `quotes.js`, funciones relacionadas con la frase destacada
+- `session.js`, funciones relacionadas al inicio y cierre de sesión.
+
+Si cargamos la página en un principio no tiene nada de información:
+
+![img_18.png](assets%2Fimg_18.png)
+
+Vamos a agregar items al archivo `items.js`, siguiendo el siguiente formato de
+array:
+```
+let items = [
+   {
+      'title': 'Titulo item',
+      'subtitle': 'Subtítulo item',
+      'imageUrl': 'url imagen'
+   },
+   {
+      'title': 'Titulo item2',
+      'subtitle': 'Subtítulo item2',
+      'imageUrl': 'url imagen2'
+   }
+]
+```
+
+Una vez agregados los items al archivo:
+
+![img_19.png](assets%2Fimg_19.png)
+
+Ya podemos ver como se muestran en la aplicación:
+
+![img_20.png](assets%2Fimg_20.png)
+
+Como ejercicio vamos a tener que arreglar dos bugs:`
+
+- Del listado de items, hay uno que no aparece (en mi caso, el primer manga de 
+la lista)
+- Al iniciar sesión, aunque usemos las credenciales correctas (**usuario**: 
+crehana, **password**: crehana123) no nos deja ingresar.`
+
+![img_21.png](assets%2Fimg_21.png)
+
+#### Solución
+
 
 
 ### Historia de Debugging
