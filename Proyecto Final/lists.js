@@ -43,6 +43,9 @@ function fillFavoriteList() {
       addItem(item, favorite);
     }
   }
+
+  document.getElementById('favorites-btn').innerHTML = 'Ver Todos';
+  document.getElementById('list-title').innerHTML = 'Favoritos';
 }
 
 

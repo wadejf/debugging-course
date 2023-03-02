@@ -45,6 +45,6 @@ function loadSession() {
 }
 
 function logout() {
-  localStorage.removeItem('user');
+  localStorage.removeItem('loggedUser');
   location.reload();
 }
